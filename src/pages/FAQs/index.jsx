@@ -66,20 +66,20 @@ const FAQsPage = () => {
               <div className="flex flex-col gap-[57px] items-start justify-start md:mt-0 mt-[43px] w-[48%] md:w-full">
                 <div className="h-[129px] md:h-[74px] relative w-full">
                   <Text
-                    className="absolute inset-x-[0] mx-auto sm:text-[40px] md:text-[46px] text-[54px] text-blue_gray-900_01 top-[0] tracking-[2.16px] w-max"
+                    className="absolute inset-x-[0] left-0 mx-auto sm:text-[40px] md:text-[46px] text-[54px] text-blue_gray-900_01 top-[0] tracking-[2.16px] w-max"
                     size="txtManropeExtraBold54"
                   >
                     Frequently Asked
                   </Text>
                   <Text
-                    className="absolute bottom-[0] left-[0] sm:text-[40px] md:text-[46px] text-[54px] text-blue_gray-900_01 tracking-[2.16px]"
+                    className="absolute bottom-[0] inset-x-[0] left-14 sm:text-[40px] md:text-[46px] text-[54px] text-blue_gray-900_01 tracking-[2.16px]"
                     size="txtManropeExtraBold54"
                   >
                     Questions
                   </Text>
                 </div>
                 <Text
-                  className="md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-900_01 tracking-[0.64px]"
+                  className="absolute left-48 bottom-36 md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-900_01 tracking-[0.64px]"
                   size="txtManropeMedium32"
                 >
                   Learn more about the platform
@@ -100,11 +100,11 @@ const FAQsPage = () => {
             alt="angel4704518640_One"
           />
           <div className="absolute flex flex-col h-max inset-[0] justify-center m-auto w-[71%]">
-            <div className="flex flex-col font-manrope gap-9 items-start justify-start w-auto md:w-full">
+            <div className="flex flex-col font-manrope gap-9 items-center justify-start w-auto md:w-full">
               <div className="flex flex-col gap-9 items-start justify-start w-auto md:w-full">
                 <div className="flex flex-col items-start justify-start w-auto md:w-full">
                   <Button
-                    className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-center min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
+                    className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-between min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
                     rightIcon={
                       <Img
                         className="h-[30px] mt-px mb-1 ml-[35px]"
@@ -119,7 +119,7 @@ const FAQsPage = () => {
                   </Button>
                 </div>
                 <Button
-                  className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-center min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
+                  className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-between min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
                   rightIcon={
                     <Img
                       className="h-[30px] mt-1 mb-px ml-[35px]"
@@ -134,7 +134,7 @@ const FAQsPage = () => {
                 </Button>
               </div>
               <Button
-                className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-center min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
+                className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-between min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
                 rightIcon={
                   <Img
                     className="h-[30px] mt-px mb-1 ml-[35px]"
@@ -148,7 +148,7 @@ const FAQsPage = () => {
                 </div>
               </Button>
               <Button
-                className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-center min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
+                className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-between min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
                 rightIcon={
                   <Img
                     className="h-[30px] mt-1 mb-px ml-[35px]"
@@ -161,16 +161,23 @@ const FAQsPage = () => {
                   How does it benefit me as a customer?
                 </div>
               </Button>
-              <div className="bg-green-800 border border-green-800 border-solid flex flex-col items-end justify-end p-5 rounded-[20px] w-full">
-                <Text
-                  className="mr-6 mt-[3px] md:text-2xl sm:text-[22px] text-[26px] text-white-A700"
-                  size="txtManropeBold26"
-                >
-                  How am I able to walk out of a shop without paying for items?
-                </Text>
-              </div>
               <Button
-                className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-center min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
+                className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-between min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
+                rightIcon={
+                  <Img
+                    className="h-[30px] mt-1 mb-px ml-[35px]"
+                    src="images/img_arrowdown339svgrepocom.svg"
+                    alt="arrow-down-339_svgrepo.com"
+                  />
+                }
+              >
+                <div className="font-bold leading-[normal] md:text-2xl sm:px-5 sm:text-[22px] text-[26px] text-left text-white-A700">
+                  How am I able to walk out of a shop without paying for items?
+                </div>
+              </Button>
+              
+              <Button
+                className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-between min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
                 rightIcon={
                   <Img
                     className="h-[30px] mt-px mb-1 ml-[35px]"
@@ -185,12 +192,12 @@ const FAQsPage = () => {
               </Button>
             </div>
             <Text
-              className="md:ml-[0] ml-[83px] mt-[169px] md:text-2xl sm:text-[22px] text-[26px] text-black-900_cc"
+              className="md:ml-[0] mt-[169px] md:text-2xl sm:text-[22px] text-[26px] text-black-900_cc text-center"
               size="txtInterBold26"
             >
               HAVE A QUESTION THAT HAS NOT BEEN ADDRESSED?
             </Text>
-            <Button className="bg-green-800_cc cursor-pointer font-manrope font-semibold leading-[normal] min-w-[260px] md:ml-[0] ml-[291px] mr-[349px] mt-7 py-[17px] rounded-[12px] text-[22px] text-center sm:text-lg text-white-A700 md:text-xl">
+            <Button className="bg-green-800_cc cursor-pointer font-manrope font-semibold leading-[normal] min-w-[260px] md:ml-[0] ml-[291px] mr-[349px] mt-7 py-[17px] rounded-[12px] text-[22px] text-center sm:text-lg text-white-A700 md:text-xl self-center">
               CONTACT US
             </Button>
           </div>

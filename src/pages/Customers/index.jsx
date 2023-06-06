@@ -102,10 +102,10 @@ const CustomersPage = () => {
             </>
           </Text>
           <div className="flex flex-col font-manrope mt-[45px] md:px-5 relative w-full">
-            <div className="flex flex-col items-center justify-start mx-auto p-[11px] shadow-bs w-full">
+            <div className="flex flex-col items-center justify-start mx-auto p-[11px] w-full">
               <div className="flex flex-col gap-[26px] justify-start mb-9 w-[83%] md:w-full">
                 <Text
-                  className="md:ml-[0] ml-[379px] sm:text-2xl md:text-[26px] text-[28px] text-black-900"
+                  className="md:ml-[0] text-center sm:text-2xl md:text-[26px] text-[28px] text-black-900"
                   size="txtManropeSemiBold28"
                 >
                   How it works
