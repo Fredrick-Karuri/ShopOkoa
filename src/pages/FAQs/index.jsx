@@ -49,41 +49,39 @@ const FAQsPage = () => {
             Get Started
           </Button>
         </header>
-        <div className="h-[416px] md:h-[635px] md:px-5 relative w-full">
-          <Img
-            className="absolute h-[416px] inset-[0] justify-center m-auto object-cover w-full"
-            src="images/img_angel4704518640.png"
-            alt="angel4704518640"
-          />
-          <Text
-            className="absolute bottom-[13%] left-[10%] md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-900_01"
-            size="txtManropeMedium32"
-          >
-            and its features
-          </Text>
-          <div className="absolute bg-gradient5  flex flex-col h-full inset-[0] items-center justify-center m-auto p-3 w-full">
+        <div className="h-[416px] md:h-[635px] relative w-full">
+          {/*Get started section image*/}
+          <div className="relative bg-gradient5  flex flex-col h-full inset-[0] items-center justify-center p-3 w-full">
             <div className="flex md:flex-col flex-row gap-11 items-start justify-start mt-[38px] w-[84%] md:w-full">
               <div className="flex flex-col gap-[57px] items-start justify-start md:mt-0 mt-[43px] w-[48%] md:w-full">
                 <div className="h-[129px] md:h-[74px] relative w-full">
                   <Text
-                    className="absolute inset-x-[0] left-0 mx-auto sm:text-[40px] md:text-[46px] text-[54px] text-blue_gray-900_01 top-[0] tracking-[2.16px] w-max"
+                    className="inset-x-[0] mx-auto text-blue_gray-900_01 top-[0] tracking-[2.16px] w-max"
                     size="txtManropeExtraBold54"
                   >
                     Frequently Asked
                   </Text>
                   <Text
-                    className="absolute bottom-[0] inset-x-[0] left-14 sm:text-[40px] md:text-[46px] text-[54px] text-blue_gray-900_01 tracking-[2.16px]"
+                    className="bottom-[0] inset-x-[0] text-blue_gray-900_01 tracking-[2.16px]"
                     size="txtManropeExtraBold54"
                   >
                     Questions
                   </Text>
                 </div>
+                <div className="flex flex-col items-start justify-between w-full">
                 <Text
-                  className="absolute left-48 bottom-36 md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-900_01 tracking-[0.64px]"
+                  className="left-48 bottom-36 md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-900_01 tracking-[0.64px]"
                   size="txtManropeMedium32"
                 >
                   Learn more about the platform
                 </Text>
+                <Text
+            className="relative md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-900_01"
+            size="txtManropeMedium32"
+          >
+            and its features
+          </Text>
+          </div>
               </div>
               <Img
                 className="h-[354px]"
@@ -93,15 +91,13 @@ const FAQsPage = () => {
             </div>
           </div>
         </div>
-        <div className="h-[1013px] md:px-5 relative w-full">
-          <Img
-            className="h-[1013px] m-auto object-cover w-full"
-            src="images/img_angel4704518640_1013x1280.png"
-            alt="angel4704518640_One"
-          />
-          <div className="absolute flex flex-col h-max inset-[0] justify-center m-auto w-[71%]">
-            <div className="flex flex-col font-manrope gap-9 items-center justify-start w-auto md:w-full">
-              <div className="flex flex-col gap-9 items-start justify-start w-auto md:w-full">
+        <div className="h-auto mt-7 md:px-5 relative w-full">
+          {/*Backround image*/}
+          
+          {/*Cards div*/}
+          <div className="relative flex flex-col h-max inset-[0] justify-center m-auto w-full">
+            <div className="flex flex-col font-manrope gap-4 items-center justify-start w-auto md:w-full">
+              <div className="flex flex-col gap-4 items-start justify-start w-auto md:w-full">
                 <div className="flex flex-col items-start justify-start w-auto md:w-full">
                   <Button
                     className="bg-green-800 border border-green-800 border-solid cursor-pointer flex items-center justify-between min-w-[900px] md:min-w-full px-[34px] py-[22px] rounded-[20px]"
@@ -113,7 +109,7 @@ const FAQsPage = () => {
                       />
                     }
                   >
-                    <div className="font-bold leading-[normal] md:text-2xl sm:px-5 sm:text-[22px] text-[26px] text-left text-white-A700">
+                    <div className="font-bold leading-[normal] md:text-2xl sm:px-2 sm:text-[22px] text-[26px] text-left text-white-A700">
                       What is ShopOkoa
                     </div>
                   </Button>
@@ -128,7 +124,7 @@ const FAQsPage = () => {
                     />
                   }
                 >
-                  <div className="font-bold leading-[normal] md:text-2xl sm:px-5 sm:text-[22px] text-[26px] text-left text-white-A700">
+                  <div className="font-bold leading-[normal] md:text-2xl sm:px-2 sm:text-[22px] text-[26px] text-left text-white-A700">
                     How can I access the service?
                   </div>
                 </Button>
@@ -143,7 +139,7 @@ const FAQsPage = () => {
                   />
                 }
               >
-                <div className="font-bold leading-[normal] md:text-2xl sm:px-5 sm:text-[22px] text-[26px] text-left text-white-A700">
+                <div className="font-bold leading-[normal] md:text-2xl sm:px-2 sm:text-[22px] text-[26px] text-left text-white-A700">
                   How can I register with the service?
                 </div>
               </Button>
@@ -157,7 +153,7 @@ const FAQsPage = () => {
                   />
                 }
               >
-                <div className="font-bold leading-[normal] md:text-2xl sm:px-5 sm:text-[22px] text-[26px] text-left text-white-A700">
+                <div className="font-bold leading-[normal] md:text-2xl sm:px-2 sm:text-[22px] text-[26px] text-left text-white-A700">
                   How does it benefit me as a customer?
                 </div>
               </Button>
@@ -171,7 +167,7 @@ const FAQsPage = () => {
                   />
                 }
               >
-                <div className="font-bold leading-[normal] md:text-2xl sm:px-5 sm:text-[22px] text-[26px] text-left text-white-A700">
+                <div className="font-bold leading-[normal] md:text-2xl sm:px-2 sm:text-[22px] text-[26px] text-left text-white-A700">
                   How am I able to walk out of a shop without paying for items?
                 </div>
               </Button>
@@ -186,23 +182,23 @@ const FAQsPage = () => {
                   />
                 }
               >
-                <div className="font-bold leading-[normal] md:text-2xl sm:px-5 sm:text-[22px] text-[26px] text-left text-white-A700">
+                <div className="font-bold leading-[normal] md:text-2xl sm:px-2 sm:text-[22px] text-[26px] text-left text-white-A700">
                   What can I use shopokoa to purchase?
                 </div>
               </Button>
             </div>
             <Text
-              className="md:ml-[0] mt-[169px] md:text-2xl sm:text-[22px] text-[26px] text-black-900_cc text-center"
-              size="txtInterBold26"
+              className="md:ml-[0] mt-[22px] md:text-2xl sm:text-[22px] text-[26px] text-black-900_cc text-center"
+              size="txtManropeBold26"
             >
               HAVE A QUESTION THAT HAS NOT BEEN ADDRESSED?
             </Text>
-            <Button className="bg-green-800_cc cursor-pointer font-manrope font-semibold leading-[normal] min-w-[260px] md:ml-[0] ml-[291px] mr-[349px] mt-7 py-[17px] rounded-[12px] text-[22px] text-center sm:text-lg text-white-A700 md:text-xl self-center">
+            <Button className="bg-green-800_cc cursor-pointer font-manrope font-semibold leading-[normal] min-w-[260px] md:ml-[0] mt-7 py-[17px] rounded-[12px] text-[22px] text-center sm:text-lg text-white-A700 md:text-xl self-center">
               CONTACT US
             </Button>
           </div>
         </div>
-        <Footer className="bg-white-A700 border-green-800 border-solid border-t flex items-center justify-center md:px-5 w-full" />
+        <Footer className="bg-white-A700 border-green-800 border-solid border-t mt-7 flex items-center justify-center md:px-5 w-full" />
       </div>
     </>
   );
