@@ -72,3 +72,48 @@
   border: 1px solid black;
   border-radius: 8px;
 }
+.image-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.image-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+    align-items: center;
+    /* gap: 1rem; */
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 65px;
+}
+
+@media (max-width: 640px) {
+  .button-container {
+    margin-top: 25px;
+  }
+}
+
+.responsive-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  max-height: 660px;
+  position: relative;
+}
+
+@media (max-width: 640px) {
+  .responsive-section {
+    width: 100%;
+  }
+}
+
+

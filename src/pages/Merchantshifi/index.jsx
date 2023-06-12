@@ -15,63 +15,80 @@ const MerchantshifiPage = () => {
         <div className='flex flex-col justify-start w-full'>
           <Header className='bg-white-A700 border-b border-green-800 border-solid flex sm:flex-col flex-row sm:gap-5 items-center justify-center md:px-5 w-full' />
           {/* left-side containing three images */}
-          <div className='bg-gradient5  flex flex-col items-center justify-start sm:pl-5 pl-[29px] w-full'>
-            <div className='flex md:flex-col flex-row gap-[29px] items-start justify-between mx-auto md:px-5 w-full'>
-              <div className='flex md:flex-1 flex-col items-end justify-start md:mt-0 mt-[68px] ml-8 w-[25%] md:w-full'>
-                <div className=' flex sm:flex-col flex-row gap-3.5 items-start justify-between mt-[8px] sm:w-full'>
-                  <Img
-                    className='h-[170px] md:h-auto object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
-                    src='images/img_rectangle52.png'
-                    alt='woman shopping clothes'
-                  />
+          <div className='flex flex-col items-center justify-start sm:pl- pl-[px] w-full'>
+            <div className='bg-gradient5  w-full'>
+              <div className='flex md:flex-col flex-row gap-[29px] items-start justify-between mx-auto  w-full'>
+                <div className='flex md:flex-1 flex-col items-end justify-start md:mt-0 mt-[68px] md:px-4 md:w-full'>
+                  <div className='image-container'>
+                    <div className='image-scroll gap-3.5 items-start justify-between mt-[19px] w-full'>
+                      <Img
+                        // className='  h-[160px] md:h-auto  object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+                        className='h-[160px] md:h-auto sm:mt-0 mt-[113px] object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+                        src='images/img_rectangle52.png'
+                        alt='woman shopping clothes'
+                      />
+
+                      <Img
+                        className='h-[160px] md:h-auto mb-[6px] object-cover rounded-lg  max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+                        src='images/img_rectangle51.png'
+                        alt='woman shopping fruits'
+                      />
+
+                      <Img
+                        className='h-[160px] md:h-auto sm:mt-0 mt-[113px] object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+                        src='images/img_rectangle50.png'
+                        alt='man shopping in a supermarket'
+                      />
+                    </div>
+                  </div>
+                  
                 </div>
 
-                <div className='flex sm:flex-col flex-row gap-3.5 items-start justify-between mt-[19px] w-full'>
-                  <Img
-                    className='h-[170px] md:h-auto mb-[6px] object-cover rounded-lg  max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
-                    src='images/img_rectangle51.png'
-                    alt='woman shopping fruits'
-                  />
+                {/* right-side containing image and text */}
+                <div className='responsive-section'>
+  <div className='h-[660px] relative w-full md:w-full sm:w-full'>
+    <Img
+      className='h-[660px] m-auto object-cover w-full'
+      src='images/img_rectangle23.png'
+      alt='rectangleTwentyThree'
+    />
+    {/* <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[15px] right-[0] rounded-bl-[45px] rounded-tl-[45px] top-[43%]'> */}
+    <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[25px] sm:p-[12px] sm:left-[50%] left-[61%] top-[60%] sm:top-[80%] transform-gpu -translate-x-1/2 -translate-y-1/2 rounded-bl-[45px] rounded-tl-[45px] rounded-tr-[45px]  '>
+      <Text
+        className='mr-[7px] text-2xl md:text-[22px]  text-black-900 sm:text-xl sm:mr-[24px]'
+        size='txtQuicksandSemiBold24Black900'
+      >
+        <>
+          Discover the benefits <br />
+          of partnering with us
+        </>
+      </Text>
 
-                  <Img
-                    className='h-[170px] md:h-auto sm:mt-0 mt-[113px] object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
-                    src='images/img_rectangle50.png'
-                    alt='man shopping in a supermarket'
-                  />
-                </div>
-                <Button className='mx-auto bg-gradient5 border border-black-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[260px] mt-[25px] py-[13px] rounded-[12px] sm:text-2xl md:text-[26px] text-[28px] text-blue_gray-900_01 text-center sm:ml-4'>
-                  Explore
-                </Button>
-                
-              </div>
-              {/* right-side containing image and text */}
-              <div className='h-[660px] relative w-3/5 md:w-full sm:w-full'>
-                <Img
-                  className='h-[660px] m-auto object-cover w-full'
-                  src='images/img_rectangle23.png'
-                  alt='rectangleTwentyThree'
-                />
-                <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-start p-[15px] right-[0] rounded-bl-[45px] rounded-tl-[45px] top-[27%]'>
-                  <Text
-                    className='mr-[7px] text-2xl md:text-[22px] text-black-900 sm:text-xl'
-                    size='txtQuicksandSemiBold24Black900'
-                  >
-                    <>
-                      Discover the benefits <br />
-                      of partnering with us
-                    </>
-                  </Text>
-                </div>
-                <Text
-                  className='absolute inset-x-[0] mx-auto text-5xl sm:text-[38px] md:text-[44px] text-white-A700 top-[12%] left-[2%] tracking-[0.96px]'
-                  size='txtManropeBold48'
-                >
-                  <>
-                    Join Our Growing Network
-                    <br />
-                    of Merchants
-                  </>
-                </Text>
+      {/* <!-- Add the button-container div inside the absolute div with the green background --> */}
+      <div className='button-container'>
+        <Button className='bg-gradient5 border border-black-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[260px] py-[13px] rounded-[12px] sm:text-2xl md:text-[26px] text-[28px] text-blue_gray-900_01 text-center sm:ml-4'>
+          Explore
+        </Button>
+      </div>
+    </div>
+
+    
+
+
+
+    <Text
+      className='absolute inset-x-[0] mx-auto text-5xl sm:text-[38px] md:text-[44px] text-white-A700 top-[12%] left-[2%] tracking-[0.96px]'
+      size='txtManropeBold48'
+    >
+      <>
+        Join Our Growing Network
+        <br />
+        of Merchants
+      </>
+    </Text>
+  </div>
+</div>
+
               </div>
             </div>
           </div>
