@@ -9,27 +9,30 @@ const ContactusPage = () => {
     <>
       <div className='bg-white-A700 flex flex-col font-manrope items-center justify-start mx-auto w-full'>
         <Header className='bg-white-A700 border-b border-green-800 border-solid flex sm:flex-col flex-row sm:gap-5 items-center justify-center md:px-5 w-full' />
-        <div className='bg-gradient4  flex sm:flex-col flex-row gap-[21px] items-center justify-end p-[66px] md:px-10 sm:px-5 w-full'>
+        <div className='bg-gradient5 flex sm:flex-col md:flex-row gap-[21px] items-center justify-between p-[40px] md:px-10 sm:px-5 w-full'>
+          {/* Text on the left side of the hero section */}
           <Text
             className='md:text-5xl text-7xl text-blue_gray-900_01 tracking-[2.88px]'
             size='txtManropeExtraBold72'
           >
             Get in touch
           </Text>
+          {/* Illustration */}
           <Img
             className='h-[290px] mb-5 sm:mt-0 mt-[23px]'
-            src='images/img_questions1.svg'
+            src='images/contact_us.svg'
             alt='undrawcontactus'
           />
         </div>
-        <div className='bg-white-A700 flex flex-col items-center justify-end outline outline-gray-500_01 p-[27px] sm:px-5 w-full'>
+
+        <div className='bg-white-A700 flex flex-col items-center justify-end outline-gray-500_01 p-[27px] sm:px-5 w-full'>
           <div className='flex flex-col items-center justify-start max-w-[1059px] mt-[61px] mx-auto md:px-5 w-full'>
             <div className='flex md:flex-col flex-row md:gap-10 items-start justify-between w-full'>
               <div className='flex flex-col items-start justify-start w-[50%] md:w-full'>
                 <div className=' flex flex-col items-start justify-start md:h-[174px] h-[252px] relative w-[89%] sm:w-full'>
                   <Text
                     className=' absolute inset-x-[0] mx-auto md:text-5xl text-[64px] text-black-900 top-[0] tracking-[2.56px]'
-                    size='txtManropeExtraBold64'
+                    size='txtManropeExtraBold62'
                   >
                     <>We’re here to listen. </>
                   </Text>
@@ -48,18 +51,12 @@ const ContactusPage = () => {
                 />
                 {/* responsive code for location section with the location log, alongside location text and below it three texts, Chandaria Business & Innovation Center: Kenyatta University and Nairobi, Kenya*/}
                 <div className='flex flex-row gap-3 items-start justify-start mt-14 w-[37%] sm:w-[40%] md:w-full'>
-                   <Img
+                  <Img
                     className=' h-[42px] w-[50px] sm:h-[40px] sm:w-[40px] md:h-[64px] md:w-[64px]'
                     src='images/img_location.svg'
                     alt='location'
-                  /> 
-                  
+                  />
 
-                  {/* <Img
-                    className=' h-[54px] w-[60px] sm:h-[40px] sm:w-[60px] md:h-[64px] md:w-[64px]'
-                    src='images/img_location.svg'
-                    alt='location'
-                  /> */}
                   <Text
                     className='sm:text-[29px] md:text-[31px] text-[33px] text-black-900 tracking-[0.66px]'
                     // size='txtManropeExtraBold33'
