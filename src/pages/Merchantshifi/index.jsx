@@ -41,54 +41,48 @@ const MerchantshifiPage = () => {
                       />
                     </div>
                   </div>
-                  
                 </div>
 
                 {/* right-side containing image and text */}
                 <div className='responsive-section'>
-  <div className='h-[660px] relative w-full md:w-full sm:w-full'>
-    <Img
-      className='h-[660px] m-auto object-cover w-full'
-      src='images/img_rectangle23.png'
-      alt='rectangleTwentyThree'
-    />
-    {/* <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[15px] right-[0] rounded-bl-[45px] rounded-tl-[45px] top-[43%]'> */}
-    <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[25px] sm:p-[12px] sm:left-[50%] left-[61%] top-[60%] sm:top-[80%] transform-gpu -translate-x-1/2 -translate-y-1/2 rounded-bl-[45px] rounded-tl-[45px] rounded-tr-[45px]  '>
-      <Text
-        className='mr-[7px] text-2xl md:text-[22px]  text-black-900 sm:text-xl sm:mr-[24px]'
-        size='txtQuicksandSemiBold24Black900'
-      >
-        <>
-          Discover the benefits <br />
-          of partnering with us
-        </>
-      </Text>
+                  <div className='h-[660px] relative w-full md:w-full sm:w-full'>
+                    <Img
+                      className='h-[660px] m-auto object-cover w-full'
+                      src='images/img_rectangle23.png'
+                      alt='rectangleTwentyThree'
+                    />
+                    {/* <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[15px] right-[0] rounded-bl-[45px] rounded-tl-[45px] top-[43%]'> */}
+                    <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[25px] sm:p-[12px] sm:left-[50%] left-[61%] top-[60%] sm:top-[80%] transform-gpu -translate-x-1/2 -translate-y-1/2 rounded-bl-[45px] rounded-tl-[45px] rounded-tr-[45px]  '>
+                      <Text
+                        className='mr-[7px] text-2xl md:text-[22px]  text-black-900 sm:text-xl sm:mr-[24px]'
+                        size='txtQuicksandSemiBold24Black900'
+                      >
+                        <>
+                          Discover the benefits <br />
+                          of partnering with us
+                        </>
+                      </Text>
 
-      {/* <!-- Add the button-container div inside the absolute div with the green background --> */}
-      <div className='button-container'>
-        <Button className='bg-gradient5 border border-black-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[260px] py-[13px] rounded-[12px] sm:text-2xl md:text-[26px] text-[28px] text-blue_gray-900_01 text-center sm:ml-4'>
-          Explore
-        </Button>
-      </div>
-    </div>
+                      {/* <!-- Add the button-container div inside the absolute div with the green background --> */}
+                      <div className='button-container'>
+                        <Button className='bg-gradient5 border border-black-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[260px] py-[13px] rounded-[12px] sm:text-2xl md:text-[26px] text-[28px] text-blue_gray-900_01 text-center sm:ml-4'>
+                          Explore
+                        </Button>
+                      </div>
+                    </div>
 
-    
-
-
-
-    <Text
-      className='absolute inset-x-[0] mx-auto text-5xl sm:text-[38px] md:text-[44px] text-white-A700 top-[12%] left-[2%] tracking-[0.96px]'
-      size='txtManropeBold48'
-    >
-      <>
-        Join Our Growing Network
-        <br />
-        of Merchants
-      </>
-    </Text>
-  </div>
-</div>
-
+                    <Text
+                      className='absolute inset-x-[0] mx-auto text-5xl sm:text-[38px] md:text-[44px] text-white-A700 top-[12%] left-[2%] tracking-[0.96px]'
+                      size='txtManropeBold48'
+                    >
+                      <>
+                        Join Our Growing Network
+                        <br />
+                        of Merchants
+                      </>
+                    </Text>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
