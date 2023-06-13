@@ -19,7 +19,7 @@ const ContactusPage = () => {
           </Text>
           {/* Illustration */}
           <Img
-            className='h-[290px] mb-5 sm:mt-0 mt-[23px]'
+            className='h-[290px] mb-5 sm:mt-0 mt-[23px] md:width-[420px] w-[320px]'
             src='images/contact_us.svg'
             alt='undrawcontactus'
           />
@@ -32,7 +32,7 @@ const ContactusPage = () => {
                 <div className=' flex flex-col items-start justify-start md:h-[174px] h-[252px] relative w-[89%] sm:w-full'>
                   <Text
                     className=' absolute inset-x-[0] mx-auto md:text-5xl text-[64px] text-black-900 top-[0] tracking-[2.56px]'
-                    size='txtManropeExtraBold62'
+                    size='txtManropeExtraBold63'
                   >
                     <>We’re here to listen. </>
                   </Text>
@@ -50,7 +50,7 @@ const ContactusPage = () => {
                   alt='feedbackOne'
                 />
                 {/* responsive code for location section with the location log, alongside location text and below it three texts, Chandaria Business & Innovation Center: Kenyatta University and Nairobi, Kenya*/}
-                <div className='flex flex-row gap-3 items-start justify-start mt-14 w-[37%] sm:w-[40%] md:w-full'>
+                <div className='flex flex-row gap-3 items-start justify-start mt-14 w-[37%] sm:w-[40%] md:w-full '>
                   <Img
                     className=' h-[42px] w-[50px] sm:h-[40px] sm:w-[40px] md:h-[64px] md:w-[64px]'
                     src='images/img_location.svg'
@@ -124,7 +124,7 @@ const ContactusPage = () => {
                       placeholder='Message'
                     />
                     {/* lets align this the right not left as is now  */}
-                    <button className='bg-[#F6F6F6] h-[50px] p-[10px] mt-[10px] w-[50%] md:w-[100%] rounded-[5px]'>
+                    <button className='bg-[#07933C] text-[#FFFFFF] h-[50px] p-[10px] mt-[10px] w-[50%] md:w-[100%] rounded-[5px] text-[22px]'>
                       Send Message
                     </button>
                   </form>
@@ -133,7 +133,7 @@ const ContactusPage = () => {
 
                   {/*code for  contact section with email and phone number having a logo of each alongside the text */}
 
-                  <div className='md:ml-[0] ml-[74px] mt-[375px] sm:mt-[40px] text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[0.72px]'>
+                  <div className='md:ml-[0] ml-[74px] mt-[375px] md:mt-[40px] text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[0.72px]'>
                     <Text
                       // className='md:text-2xl sm:text-[22px] text-[26px] text-black-900_b2'
                       className='sm:text-[29px] md:text-[31px] text-[33px] text-black-900 tracking-[0.66px]'

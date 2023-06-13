@@ -15,12 +15,51 @@ const MerchantshifiPage = () => {
         <div className='flex flex-col justify-start w-full'>
           <Header className='bg-white-A700 border-b border-green-800 border-solid flex sm:flex-col flex-row sm:gap-5 items-center justify-center md:px-5 w-full' />
           {/* left-side containing three images */}
-          <div className='flex flex-col items-center justify-start sm:pl- pl-[px] w-full'>
+          <div className='flex flex-col items-center justify-start w-full'>
             <div className='bg-gradient5  w-full'>
-              <div className='flex md:flex-col flex-row gap-[29px] items-start justify-between mx-auto  w-full'>
-                <div className='flex md:flex-1 flex-col items-end justify-start md:mt-0 mt-[68px] md:px-4 md:w-full'>
+              <div className='flex md:flex-col flex-row sm:gap-[29px] items-start justify-between mx-auto  w-full'>
+                {/* right-side containing image and text */}
+                <div className='responsive-section'>
+                  <div className=' md:w-full  h-[660px] relative w-full  sm:w-full'>
+                    <Img
+                      className='h-[660px] m-auto object-cover w-full '
+                      src='images/img_rectangle23.png'
+                      alt='rectangleTwentyThree'
+                    />
+
+                    {/* <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[15px] right-[0] rounded-bl-[45px] rounded-tl-[45px] top-[43%]'> */}
+                    {/* align the elements center */}
+
+                    <div className='absolute bg-[rgba(0,0,0,0.5)]  flex items-center justify-center p-6 sm:p-[10px] sm:left-[50%] left-[61%] top-[70%] sm:top-[80%] transform-gpu -translate-x-1/2 -translate-y-1/2 rounded-bl-[45px] rounded-tl-[45px] rounded-tr-[45px]'>
+                      <div className='flex flex-col items-center'>
+                        <Text
+                          className=' ml-8 font-quicksand font-medium leading-[normal] min-w-[260px] py-[13px] rounded-[12px] sm:text-2xl md:text-[26px] text-[28px] text-white-A700 text-center sm:ml-4'
+                          size='txtQuicksandSemiBold24Black900'
+                        >
+                          <>Discover the benefits of partnering with us</>
+                        </Text>
+
+                        <div className='button-container'>
+                          <Button className='bg-gradient5 border border-black-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[260px] py-[13px] rounded-[12px] sm:text-2xl md:text-[26px] text-[28px] text-blue_gray-900_01 text-center sm:ml-4'>
+                            Explore
+                          </Button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <Text
+                      className='absolute inset-x-[0] w-[58%] md:w-[74%] sm:w-[80%] mx-auto text-5xl sm:text-[38px] md:text-[44px] text-white-A700 top-[12%] left-[%] tracking-[0.96px]'
+                      size='txtManropeBold48'
+                    >
+                      <>Join Our Growing Network of Merchants</>
+                    </Text>
+                  </div>
+                </div>
+
+                {/* three floating images */}
+                <div className='flex md:flex-1 flex-col  justify-start md:mt-0 mt-[68px] md:px-4 md:w-full'>
                   <div className='image-container'>
-                    <div className='image-scroll gap-3.5 items-start justify-between mt-[19px] w-full'>
+                    <div className='image-scroll gap-3.5 items-start justify-between mb-6 w-full'>
                       <Img
                         // className='  h-[160px] md:h-auto  object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
                         className='h-[160px] md:h-auto sm:mt-0 mt-[113px] object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
@@ -29,7 +68,9 @@ const MerchantshifiPage = () => {
                       />
 
                       <Img
-                        className='h-[160px] md:h-auto mb-[6px] object-cover rounded-lg  max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+                        className=' h-[160px] md:h-auto mb-[6px] md:mt-2 md:mt-[113px] object-cover rounded-lg  max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+                        // className=' h-[160px] md:h-auto sm:mt-0 mt-[113px] object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+
                         src='images/img_rectangle51.png'
                         alt='woman shopping fruits'
                       />
@@ -40,47 +81,6 @@ const MerchantshifiPage = () => {
                         alt='man shopping in a supermarket'
                       />
                     </div>
-                  </div>
-                </div>
-
-                {/* right-side containing image and text */}
-                <div className='responsive-section'>
-                  <div className='h-[660px] relative w-full md:w-full sm:w-full'>
-                    <Img
-                      className='h-[660px] m-auto object-cover w-full'
-                      src='images/img_rectangle23.png'
-                      alt='rectangleTwentyThree'
-                    />
-                    {/* <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[15px] right-[0] rounded-bl-[45px] rounded-tl-[45px] top-[43%]'> */}
-                    <div className='absolute bg-green-200_7a flex flex-col font-quicksand items-end justify-between p-[25px] sm:p-[12px] sm:left-[50%] left-[61%] top-[60%] sm:top-[80%] transform-gpu -translate-x-1/2 -translate-y-1/2 rounded-bl-[45px] rounded-tl-[45px] rounded-tr-[45px]  '>
-                      <Text
-                        className='mr-[7px] text-2xl md:text-[22px]  text-black-900 sm:text-xl sm:mr-[24px]'
-                        size='txtQuicksandSemiBold24Black900'
-                      >
-                        <>
-                          Discover the benefits <br />
-                          of partnering with us
-                        </>
-                      </Text>
-
-                      {/* <!-- Add the button-container div inside the absolute div with the green background --> */}
-                      <div className='button-container'>
-                        <Button className='bg-gradient5 border border-black-900 border-solid cursor-pointer font-medium leading-[normal] min-w-[260px] py-[13px] rounded-[12px] sm:text-2xl md:text-[26px] text-[28px] text-blue_gray-900_01 text-center sm:ml-4'>
-                          Explore
-                        </Button>
-                      </div>
-                    </div>
-
-                    <Text
-                      className='absolute inset-x-[0] mx-auto text-5xl sm:text-[38px] md:text-[44px] text-white-A700 top-[12%] left-[2%] tracking-[0.96px]'
-                      size='txtManropeBold48'
-                    >
-                      <>
-                        Join Our Growing Network
-                        <br />
-                        of Merchants
-                      </>
-                    </Text>
                   </div>
                 </div>
               </div>
@@ -115,10 +115,10 @@ const MerchantshifiPage = () => {
                 className='mt-3 text-[22px] text-black-900 sm:text-lg md:text-xl'
                 size='txtManropeSemiBold22'
               >
-                unsecured credit{' '}
+                unsecured credit
               </Text>
               <Text
-                className='mt-[26px] text-black-900 text-xl'
+                className=' mt-[26px] text-black-900 text-xl'
                 size='txtQuicksandRegular20'
               >
                 <>
@@ -175,8 +175,31 @@ const MerchantshifiPage = () => {
                 </>
               </Text>
             </div>
-          </List>
-          <div className='flex md:flex-col flex-row gap-12 items-center justify-center md:ml-[0] ml-[] mt-7 md:px-5  md:w-full'>
+            <div className='border border-blue_gray-100_01 border-solid flex flex-col items-center justify-start pb-6 rounded-[12px]  md:w-full'>
+              <Img
+                className='h-[250px] sm:h-auto object-cover rounded-tl-[12px] rounded-tr-[12px] w-full'
+                src='images/img_rectangle53.png'
+                alt='rectangleFiftyThree'
+              />
+              <Text
+                className='mt-2.5 text-[22px] text-black-900 sm:text-lg md:text-xl'
+                size='txtManropeSemiBold22'
+              >
+                Dedicated Support
+              </Text>
+              <Text
+                className='mt-1 text-black-900 text-xl'
+                size='txtQuicksandRegular20'
+              >
+                <>
+                  Get reliable and responsive support <br />
+                  from our team, ensuring a smooth <br />
+                  and hassle-free experience on our
+                  <br />
+                  platform
+                </>
+              </Text>
+            </div>
             <div className='border border-blue_gray-100_01 border-solid flex flex-col gap-2.5 items-end justify-start pb-6 rounded-[12px]  md:w-full'>
               <Img
                 className='h-[250px] sm:h-auto object-cover rounded-tl-[12px] rounded-tr-[12px] w-full'
@@ -203,32 +226,8 @@ const MerchantshifiPage = () => {
                 </Text>
               </div>
             </div>
-            <div className='border border-blue_gray-100_01 border-solid flex flex-col items-center justify-start pb-6 rounded-[12px]  md:w-full'>
-              <Img
-                className='h-[250px] sm:h-auto object-cover rounded-tl-[12px] rounded-tr-[12px] w-full'
-                src='images/img_rectangle53.png'
-                alt='rectangleFiftyThree'
-              />
-              <Text
-                className='mt-2.5 text-[22px] text-black-900 sm:text-lg md:text-xl'
-                size='txtManropeSemiBold22'
-              >
-                Dedicated Support
-              </Text>
-              <Text
-                className='mt-1 text-black-900 text-xl'
-                size='txtQuicksandRegular20'
-              >
-                <>
-                  Get reliable and responsive support <br />
-                  from our team, ensuring a smooth <br />
-                  and hassle-free experience on our
-                  <br />
-                  platform
-                </>
-              </Text>
-            </div>
-          </div>
+          </List>
+
           {/* how it works section start */}
           <div className='flex justify-center mt-12'>
             <Text
@@ -239,7 +238,9 @@ const MerchantshifiPage = () => {
             </Text>
           </div>
 
-          <div className='flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[862px] mt-[100px] mx-auto md:px-5 w-full sm:items-center '>
+          {/* <div className='flex sm:flex-col flex-row md:gap-10 items-start justify-between max-w-[862px] mt-[100px] mx-auto md:px-5 w-full sm:items-center '> */}
+          <div className='flex sm:flex-col flex-row sm:gap-10 items-start justify-between max-w-[842px] mt-[87px] mx-auto md:px-5 w-full sm:items-center'>
+
             {/* step 1 illustration */}
             <Img
               className='h-[252px] sm:'
@@ -249,7 +250,7 @@ const MerchantshifiPage = () => {
             <div className='flex flex-col gap-4 items-center justify-start md:mt-0 mt-[50px]'>
               <a
                 href='javascript:'
-                className='text-[22px] text-black-900 sm:text-lg md:text-xl'
+                className='text-[22px] text-black-900 sm:text-lg md:text-xl md:mt-10 sm:mt-0'
               >
                 {/* step 1 title */}
                 <Text size='txtManropeSemiBold22'>Sign Up</Text>
@@ -296,7 +297,7 @@ const MerchantshifiPage = () => {
               />
             </div>
           </div>
-          <div className='flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[907px] mt-12 mx-auto md:px-5 w-full sm:items-center'>
+          <div className='flex sm:flex-col flex-row md:gap-10 items-start justify-between max-w-[907px] mt-12 mx-auto md:px-5 w-full sm:items-center '>
             {/* Step 3 illustration */}
             <div className='flex items-center'>
               <Img
@@ -307,7 +308,7 @@ const MerchantshifiPage = () => {
             </div>
 
             {/* Step 3 title and content */}
-            <div className='flex flex-col gap-4 items-center justify-start md:mt-0 mt-12'>
+            <div className='flex flex-col gap-4 items-center justify-start md:mt-10 sm:mt-0 mt-12'>
               {/* Step 3 title */}
               <Text
                 className='text-[22px] text-black-900 sm:text-lg md:text-xl'
@@ -357,24 +358,24 @@ const MerchantshifiPage = () => {
                 {/* merchant story 1 */}
                 <div className='bg-white-A700 border border-black-900 border-solid flex flex-1 flex-col justify-start p-[9px] rounded-[12px] w-full'>
                   <Img
-                    className='h-[120px] md:h-auto mt-0.5 mx-auto object-cover rounded-[20px] w-[22%] sm:w-[150px]'
+                    className='h-[120px] md:h-auto mt-0.5 mx-auto object-cover rounded-[20px] w-[22%] md:w-[150px]'
                     src='images/img_rectangle6.png'
                     alt='rectangleSix'
                   />
                   <Text
-                    className='text-center md:text-left mt-1 text-[22px] text-black-900 sm:text-lg md:text-xl sm:text-center'
+                    className='text-center md:text-left mt-1 text-[22px] text-black-900 sm:text-lg md:text-xl md:text-center'
                     size='txtManropeSemiBold22'
                   >
                     Jane
                   </Text>
                   <Text
-                    className='text-center md:text-left mt-4 text-[22px] text-gray-500 sm:text-lg md:text-xl sm:text-center'
+                    className='text-center md:text-left mt-4 text-[22px] text-gray-500 sm:text-lg md:text-xl md:text-center'
                     size='txtManropeSemiBold22Gray500'
                   >
                     Owner of ABC E-commerce Store
                   </Text>
                   <Text
-                    className='text-center md:text-left mt-[7px] text-gray-600_01 text-xl sm:ml-1 sm:mb-2'
+                    className='text-center md:text-left mt-[7px] text-gray-600_01 text-xl md:ml-1 md:mb-2'
                     size='txtQuicksandRegular20Gray60001'
                   >
                     <>
@@ -387,24 +388,24 @@ const MerchantshifiPage = () => {
                 {/* merchant story 2 */}
                 <div className='bg-white-A700 border border-black-900 border-solid flex flex-1 flex-col justify-end p-[9px]  rounded-[12px] w-full'>
                   <Img
-                    className='h-[120px] md:h-auto mt-0.5 mx-auto object-cover rounded-[20px] w-[22%] sm:w-[150px]'
+                    className='h-[120px] md:h-auto mt-0.5 mx-auto object-cover rounded-[20px] w-[22%] md:w-[150px]'
                     src='images/img_rectangle57.png'
                     alt='rectangleFiftySeven'
                   />
                   <Text
-                    className='text-center md:text-left mt-1 text-[22px] text-black-900 sm:text-lg md:text-xl sm:text-center'
+                    className='text-center md:text-left mt-1 text-[22px] text-black-900 sm:text-lg md:text-xl md:text-center'
                     size='txtManropeSemiBold22'
                   >
                     John{' '}
                   </Text>
                   <Text
-                    className='text-center md:text-left mt-4 text-[22px] text-gray-500 sm:text-lg md:text-xl sm:text-center'
+                    className='text-center md:text-left mt-4 text-[22px] text-gray-500 sm:text-lg md:text-xl md:text-center'
                     size='txtManropeSemiBold22Gray500'
                   >
                     Small Business Owner
                   </Text>
                   <Text
-                    className=' sm:ml-1 text-center md:text-left mt-[7px] text-gray-600_01 text-xl '
+                    className=' md:ml-1 text-center md:text-left mt-[7px] text-gray-600_01 text-xl '
                     size='txtQuicksandRegular20Gray60001'
                   >
                     <>

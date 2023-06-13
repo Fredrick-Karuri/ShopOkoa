@@ -26,7 +26,7 @@ const Footer = props => {
               {/* centre the logo */}
 
               <Img
-                className='flex sm:align-center justify-center  md:h-[41px] h-auto object-cover w-[15%] md:w-[50%] sm:w-[60%] sm:ml-20'
+                className='flex flex-row  justify-center  md:h-[41px] h-auto object-cover w-[15%] md:w-[50%] sm:w-[60%] md:ml-20'
                 src='images/img_asset14shopokoa.png'
                 alt='image of the ShopOkoa logo'
                 style={{ maxWidth: '100%', height: 'auto' }}
@@ -34,7 +34,7 @@ const Footer = props => {
               {/* navigation and policies should be in a row when in a small device */}
               {/* Navigation section */}
 
-              <div className='flex flex-row gap-[260px] md:gap-[100px] sm:gap-[50px] items-start justify-start sm:ml-[80px]  md:ml-[80px] ml-[80px] sm:ml-0 sm:w-[60%] w-full '>
+              <div className='flex flex-row gap-[260px] md:gap-[100px] sm:gap-[50px] items-start justify-start sm:ml-[80px]  md:ml-[80px] ml-[80px] sm:ml-20 sm:w-[60%] w-full '>
                 <div className='flex flex-col items-start justify-start  my-5'>
                   <Text
                     className='text-[22px] text-blue_gray-900_02 sm:text-lg md:text-xl'
@@ -57,6 +57,7 @@ const Footer = props => {
                       <Text
                         className='text-blue_gray-800 text-xl'
                         size='txtQuicksandRegular20Bluegray800'
+                        onClick={() => navigate('/merchantshifi')}
                       >
                         Merchants
                       </Text>
@@ -65,6 +66,7 @@ const Footer = props => {
                       <Text
                         className='text-blue_gray-800 text-xl'
                         size='txtQuicksandRegular20Bluegray800'
+                        onClick={() => navigate('/about')}
                       >
                         About
                       </Text>
@@ -94,13 +96,6 @@ const Footer = props => {
                       </Text>
                     </li>
                     <li>
-                      {/* <Text
-                        className='text-blue_gray-800 text-xl'
-                        size='txtQuicksandRegular20Bluegray800'
-                      >
-                        Privacy Policies
-                      </Text> */}
-
                       <Text
                         className={`text-blue_gray-800 text-xl ${
                           isSmallScreen ? 'terms-small' : ''
@@ -115,6 +110,7 @@ const Footer = props => {
                       <Text
                         className='text-blue_gray-800 text-xl'
                         size='txtQuicksandRegular20Bluegray800'
+                        onClick={() => navigate('/faqs')}
                       >
                         FAQs
                       </Text>
@@ -134,7 +130,6 @@ const Footer = props => {
                 <ul className='flex flex-col gap-[9px] items-start justify-start'>
                   <li>
                     <Button
-                      onClick={() => navigate(' ')}
                       className='bg-transparent cursor-pointer font-quicksand leading-[normal] mb-[3px] min-w-[284px] md:w-full text-blue_gray-800 text-center text-xl'
                       mailto='dukatechsolutions@gmail.com'
                     >
@@ -160,7 +155,7 @@ const Footer = props => {
                 </ul>
                 {/* social media section */}
                 {/* add space between the icons and align them a */}
-                <div className='flex flex-row items-center justify-start md:ml-0 mt-5 sm:flex-col sm:items-start sm:justify-start '>
+                <div className='flex flex-row items-center justify-start md:ml-0 mt-5 md:flex-col sm:flex-col sm:items-start sm:justify-start '>
                   {/* Social media icons */}
                   <div className='flex flex-row gap-[20px] items-start justify-start '>
                     <Img
@@ -185,7 +180,7 @@ const Footer = props => {
                     />
                   </div>
                   {/* Copyright text */}
-                  <div className='flex flex-col items-start justify-start md:ml-[0] ml-[-750px]  md:w-full common-column-list sm:mt-8'>
+                  <div className='flex flex-col items-start justify-start md:ml-[0] ml-[-750px]  md:w-full common-column-list md:mt-8 sm:mt-8'>
                     <Text
                       className='text-[22px] text-blue_gray-900_02 sm:text-lg md:text-xl'
                       size='txtManropeSemiBold22Bluegray90002'

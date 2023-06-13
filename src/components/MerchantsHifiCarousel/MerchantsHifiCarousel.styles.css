@@ -92,12 +92,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 65px;
+  margin-top: 20px;
 }
 
 @media (max-width: 640px) {
   .button-container {
-    margin-top: 25px;
+    margin-top: 16px;
   }
 }
 
@@ -110,7 +110,7 @@
   position: relative;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
   .responsive-section {
     width: 100%;
   }
