@@ -13,50 +13,48 @@ const AboutPage = () => {
       <div className='bg-white-A700 flex flex-col items-center justify-start mx-auto w-full'>
         <div className='flex flex-col justify-start w-full'>
           <Header className='bg-white-A700 border-b border-green-800 border-solid flex sm:flex-col flex-row font-manrope sm:gap-5 items-center justify-center md:px-5 w-full' />
-          <div>
-            <div className='font-manrope h-[676px] md:px-5 relative w-full'>
-              <div
-                className='absolute bg-cover bg-no-repeat flex flex-col h-full inset-y-[0] items-center justify-start my-auto p-7 sm:px-5 right-[0] w-[37%]'
-                style={{ backgroundImage: "url('images/img_group22.png')" }}
-              >
-                <div className='flex flex-col md:gap-10 gap-[278px] items-center justify-start mb-[62px] mt-11 w-[97%] md:w-full'>
+          {/* hero to cover the whole screen with a height of 800px and a width of 100%  */}
+          <div
+            className='bg-cover bg-no-repeat flex flex-col h-[800px] inset-y-[0] items-center justify-start my-auto p-7 sm:px-5 '
+            style={{ backgroundImage: "url('images/about-hero-left.png')" }}
+          >
+            <div className='font-manrope h-[800px] md:px-12 sm:px-0  relative w-full'>
+              <div className='flex flex-col    items-center justify-start sm:mt-0 mt-11  md:w-full'>
+                <div className='flex flex-col  items-center justify-start  sm:mt-0  md:w-full'>
                   <Text
-                    className='sm:text-[32px] md:text-[38px] text-[42px] text-blue_gray-900_02 tracking-[0.84px]'
+                    className='  max-w-[60%] sm:text-[32px] sm:mt-[0px] sm:max-w-[80%] md:mt-[200px]     md:text-[38px] text-[42px] text-blue_gray-900_02 tracking-[0.84px] '
                     size='txtManropeMedium42'
                   >
-                    <span className='text-blue_gray-900_02 font-manrope text-left font-bold'>
+                    <span className=' md:text-[#FFFFFF] sm:text-blue_gray-900_02 font-manrope font-bold'>
                       <>Empowering you to shop smart and </>
                     </span>
 
-                    <span className='text-green-800_01 font-manrope text-left font-bold'>
-                      pay later
+                    <span className=' md:text-[#FDDA01] sm:text-green-800_01  text-green-800_01 font-manrope  font-bold'>
+                      pay later {''}
                     </span>
-                    <span className='text-blue_gray-900_02 font-manrope text-left font-bold'>
-                      {' '}
+                    <span className='md:text-[#FFFFFF] sm:text-blue_gray-900_02 font-manrope font-bold'>
                       with ease
                     </span>
                   </Text>
-                  <div className='bg-gradient10  border border-black-900 border-solid flex flex-row gap-7 items-end justify-center p-[9px] rounded-[12px] w-[66%] md:w-full'>
+                </div>
+
+                {/* button similar  the text,our story with the image, alongside it */}
+                {/*align the button at the bottom of the screen, using absolute a with a height of 80px, a width of 280px, a radius of 12px, a border of black, a border-solid, a background-gradient10, a flex, a flex-row, a items-center, a justify-center,  */}
+
+                <div className='absolute bottom-[0px]  bg-gradient10 border border-black-900 border-solid flex flex-row rounded-[12px]   '>
+                  <Button
+                    onClick={() => navigate('')}
+                    className='flex flex-row items-center justify-center gap-7 cursor-pointer font-semibold leading-[normal] max-w-[280px] min-w-[280px] py-[18px] rounded-lg text-[22px] text-black-900 text-center sm:text-lg md:text-xl'
+                  >
                     <Img
-                      className='h-10 ml-[46px] mt-[7px] w-10'
+                      className=' '
                       src='images/img_readsvgrepocom.svg'
                       alt='readsvgrepocom'
                     />
-                    <Text
-                      className='mr-7 mt-3.5 text-[22px] text-black-900 sm:text-lg md:text-xl'
-                      size='txtManropeSemiBold22'
-                    >
-                      Our Story
-                    </Text>
-                  </div>
+                    <Text>Our Story</Text>
+                  </Button>
                 </div>
               </div>
-              {/* left side */}
-              <Img
-                className='absolute h-[676px] inset-y-[0] left-[0] my-auto object-cover w-[64%]'
-                src='images/img_image2.png'
-                alt='imageTwo'
-              />
             </div>
           </div>
           <div className='font-quicksand flex flex-col items-center justify-start md:px-5 w-full'>
