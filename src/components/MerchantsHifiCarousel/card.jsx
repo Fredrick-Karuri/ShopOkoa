@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button, Img, Text } from 'components';
 import { useSpring, animated } from 'react-spring';
+// code to animate cards as they enter the view port.
 
 const Card = ({
   className,

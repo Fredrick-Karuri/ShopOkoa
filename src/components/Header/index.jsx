@@ -10,7 +10,6 @@ const Header = props => {
   return (
     <>
       <header className={`${props.className} mobile-menu `}>
-        {/* <header className={props.className}> */}
         <Img
           className='common-pointer h-11 md:h-auto mb-[7px] sm:ml-[0] ml-[42px] sm:mt-0 mt-[22px] object-cover w-[10%] sm:w-full'
           src='images/img_asset14shopokoa.png'
