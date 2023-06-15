@@ -1,19 +1,19 @@
 import React from 'react'
 import Card from './card'
-import './MerchantsHifiCarousel.styles.css';
+import './MerchantsCarousel.styles.css'
 
 import { Button, Img, Text } from 'components'
 
-const MerchantsHifiCarousel = props => {
+const MerchantsCarousel = props => {
   return (
     <>
-      <div className={`container ${props.className} `}> 
+      <div className={`container ${props.className} `}>
         {/* good life pharmacy */}
-   
+
         <Card
           animateIntoView={true}
           className='bg-gradient  justify-end card'
-          imageClassName='h-20 md:h-auto w-[88%] sm:w-[100%]'
+          imageClassName='h-22 md:h-auto w-[88%] sm:w-[100%]'
           // textClassName='mt-[71px] w-[77%] sm:w-full'
           buttonClassName='card-button'
           imageSrc='images/img_goodlifepharmacy1.png'
@@ -23,7 +23,7 @@ const MerchantsHifiCarousel = props => {
         />
 
         {/* mamapesa */}
-   
+
         <Card
           animateIntoView={true}
           className='bg-gradient1  justify-start card'
@@ -37,26 +37,25 @@ const MerchantsHifiCarousel = props => {
         />
 
         {/* naivas */}
-     
+        {/* add onclick functionality to button and go to site: https://www.goodlife.co.ke/*/}
+
         <Card
           animateIntoView={true}
           className='bg-gradient2 justify-end card'
-          imageClassName='h-20 md:h-auto w-[62%] sm:w-[100%] sm:h-[60] mt-[19px]'
+          imageClassName='h-22 md:h-auto w-[62%]  sm:w-[80%]  mt-[19px]'
           // textClassName='mt-[66px] w-[86%] sm:w-full'
-          buttonClassName='bg-gradient3 card-button'
+          buttonClassName=' bg-gradient3 card-button'
           imageSrc='images/img_naivassupermarketlogo.png'
           imageAlt='naivassupermark'
           userDescription={props?.naivasdescription}
           userVisitSite={props?.naivasvisitsite}
         />
-
-      
       </div>
     </>
   )
 }
 
-MerchantsHifiCarousel.defaultProps = {
+MerchantsCarousel.defaultProps = {
   userdescription: <>Your one-stop solution for health and wellness</>,
   uservisitsite: 'Visit Site',
   mamapesadescription: <>Empowering entrepreneurs with financial solutions</>,
@@ -65,4 +64,4 @@ MerchantsHifiCarousel.defaultProps = {
   naivasvisitsite: 'Visit Site'
 }
 
-export default MerchantsHifiCarousel
+export default MerchantsCarousel

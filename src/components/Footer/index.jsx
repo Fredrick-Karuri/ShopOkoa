@@ -34,7 +34,7 @@ const Footer = props => {
               {/* navigation and policies should be in a row when in a small device */}
               {/* Navigation section */}
 
-              <div className='flex flex-row gap-[260px] md:gap-[100px] sm:gap-[50px] items-start justify-start sm:ml-[80px]  md:ml-[80px] ml-[80px] sm:ml-20 sm:w-[60%] w-full '>
+              <div className='flex flex-row gap-[350px] md:gap-[100px] sm:gap-[50px] items-start justify-start sm:ml-[80px]  md:ml-[80px] ml-[80px] sm:ml-20 sm:w-[60%] w-full '>
                 <div className='flex flex-col items-start justify-start  my-5'>
                   <Text
                     className='text-[22px] text-blue_gray-900_02 sm:text-lg md:text-xl'
@@ -57,7 +57,7 @@ const Footer = props => {
                       <Text
                         className='text-blue_gray-800 text-xl'
                         size='txtQuicksandRegular20Bluegray800'
-                        onClick={() => navigate('/merchantshifi')}
+                        onClick={() => navigate('/merchants')}
                       >
                         Merchants
                       </Text>

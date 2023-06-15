@@ -33,7 +33,7 @@ const Header = props => {
         <Text
           className='common-pointer mb-[17px] sm:ml-[0] ml-[41px] sm:mt-0 mt-[31px] text-blue_gray-900_02 text-lg'
           size='txtManropeSemiBold18Bluegray90002'
-          onClick={() => navigate('/merchantshifi')}
+          onClick={() => navigate('/merchants')}
         >
           Merchants
         </Text>

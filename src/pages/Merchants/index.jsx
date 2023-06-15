@@ -3,10 +3,10 @@ import React from 'react'
 import { Button, Img, List, Text } from 'components'
 import Footer from 'components/Footer'
 import Header from 'components/Header'
-import MerchantsHifiCarousel from 'components/MerchantsHifiCarousel'
+import MerchantsCarousel from 'components/MerchantsCarousel'
 import { useNavigate } from 'react-router-dom'
 
-const MerchantshifiPage = () => {
+const MerchantsPage = () => {
   const navigate = useNavigate()
 
   return (
@@ -20,9 +20,9 @@ const MerchantshifiPage = () => {
               <div className='flex md:flex-col flex-row sm:gap-[29px] items-start justify-between mx-auto  w-full'>
                 {/* right-side containing image and text */}
                 <div className='responsive-section'>
-                  <div className=' md:w-full  h-[660px] relative w-full  sm:w-full'>
+                  <div className=' md:w-full  h-[760px] relative w-full  sm:w-full'>
                     <Img
-                      className='h-[660px] m-auto object-cover w-full '
+                      className='h-[760px] m-auto object-cover w-full '
                       src='images/img_rectangle23.png'
                       alt='rectangleTwentyThree'
                     />
@@ -57,9 +57,9 @@ const MerchantshifiPage = () => {
                 </div>
 
                 {/* three floating images */}
-                <div className='flex md:flex-1 flex-col  justify-start md:mt-0 mt-[68px] md:px-4 md:w-full'>
+                <div className='flex md:flex-1 flex-col  justify-start md:mt-0 mt-40 md:px-4 md:w-full'>
                   <div className='image-container'>
-                    <div className='image-scroll gap-3.5 items-start justify-between mb-6 w-full'>
+                    <div className='image-scroll gap-3.5 items-start justify-between mb-6 w-full '>
                       <Img
                         // className='  h-[160px] md:h-auto  object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
                         className='h-[160px] md:h-auto sm:mt-0 mt-[113px] object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
@@ -68,7 +68,7 @@ const MerchantshifiPage = () => {
                       />
 
                       <Img
-                        className=' h-[160px] md:h-auto mb-[6px] md:mt-2 md:mt-[113px] object-cover rounded-lg  max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
+                        className=' h-[160px] md:h-auto mb-[6px] md:mt-2 object-cover rounded-lg  max-w-full max-h-[170px] sm:mt-0 sm:max-h-auto md:max-h-auto'
                         // className=' h-[160px] md:h-auto sm:mt-0 mt-[113px] object-cover rounded-lg max-w-full max-h-[170px] sm:max-h-auto md:max-h-auto'
 
                         src='images/img_rectangle51.png'
@@ -87,15 +87,15 @@ const MerchantshifiPage = () => {
             </div>
           </div>
           <Text
-            className='mx-auto mt-12 sm:mt-6 md:mt-[34px] text-3xl md:text-[26px] text-black-900 tracking-[0.56px]'
+            className='mx-auto mt-12 sm:mt-6 md:mt-8 text-3xl md:text-[26px] text-black-900 tracking-[0.56px]'
             size='txtManropeSemiBold28'
           >
             Featured merchants
           </Text>
 
-          <MerchantsHifiCarousel className='gap-14 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-start max-w-[1012px] mt-6 sm:mt-8 md:mt-[18px] mx-auto md:px-5 w-full' />
+          <MerchantsCarousel className=' gap-4 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 items-center justify-start max-w-[1012px] mt-6 sm:mt-8 md:mt-[18px] mx-auto md:px-5 w-full' />
           <Text
-            className='mx-auto mt-12 sm:mt-6 md:mt-[52px] text-3xl md:text-[26px] text-black-900 tracking-[0.56px]'
+            className='mx-auto mt-12 sm:mt-6 md:mt-10 text-3xl md:text-[26px] text-black-900 tracking-[0.56px]'
             size='txtManropeSemiBold28'
           >
             Merchant Benefits
@@ -240,7 +240,6 @@ const MerchantshifiPage = () => {
 
           {/* <div className='flex sm:flex-col flex-row md:gap-10 items-start justify-between max-w-[862px] mt-[100px] mx-auto md:px-5 w-full sm:items-center '> */}
           <div className='flex sm:flex-col flex-row sm:gap-10 items-start justify-between max-w-[842px] mt-[87px] mx-auto md:px-5 w-full sm:items-center'>
-
             {/* step 1 illustration */}
             <Img
               className='h-[252px] sm:'
@@ -420,7 +419,7 @@ const MerchantshifiPage = () => {
             </div>
           </div>
 
-          <div className='bg-gradient6 flex flex-col items-center justify-end mt-[39px] p-[19px] rounded-lg w-full'>
+          <div className='bg-gradient6 flex flex-col items-center justify-end mt-[39px] p-[19px]  w-full'>
             <div className='flex flex-col items-center justify-start max-w-[1200px] mt-[3px] mx-auto md:px-5 w-full'>
               <div className='flex flex-col items-center w-full'>
                 <Text
@@ -430,7 +429,7 @@ const MerchantshifiPage = () => {
                   Our Impact in Numbers
                 </Text>
               </div>
-              <div className='grid grid-cols-3 md:grid-cols-1 gap-6 mt-6 w-full'>
+              <div className='grid grid-cols-3 md:grid-cols-1 gap-10 mt-6 w-full'>
                 {/* merchant partnerships */}
                 <div className='flex flex-col items-center'>
                   <Img
@@ -523,7 +522,7 @@ const MerchantshifiPage = () => {
               {/* buttons to prompt the user to become a merchant */}
               <div className='flex justify-center mt-9'>
                 <Button
-                  onClick={() => navigate('/merchantshifi')}
+                  onClick={() => navigate('/merchants')}
                   className='bg-gradient6 border border-black-900 border-solid cursor-pointer font-semibold leading-[normal] max-w-[280px] min-w-[280px] py-[18px] rounded-lg text-[22px] text-black-900 text-center sm:text-lg md:text-xl'
                 >
                   Become a merchant
@@ -539,4 +538,4 @@ const MerchantshifiPage = () => {
   )
 }
 
-export default MerchantshifiPage
+export default MerchantsPage

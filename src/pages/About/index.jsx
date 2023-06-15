@@ -15,7 +15,7 @@ const AboutPage = () => {
           <Header className='bg-white-A700 border-b border-green-800 border-solid flex sm:flex-col flex-row font-manrope sm:gap-5 items-center justify-center md:px-5 w-full' />
           {/* hero to cover the whole screen with a height of 800px and a width of 100%  */}
           <div
-            className='bg-cover bg-no-repeat flex flex-col h-[800px] inset-y-[0] items-center justify-start my-auto p-7 sm:px-5 '
+            className='bg-cover bg-no-repeat flex flex-col h-[760px] inset-y-[0] items-center justify-start my-auto p-7 sm:px-5 '
             style={{ backgroundImage: "url('images/about-hero-left.png')" }}
           >
             <div className='font-manrope h-[800px] md:px-12 sm:px-0  relative w-full'>
