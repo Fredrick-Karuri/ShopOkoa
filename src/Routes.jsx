@@ -4,7 +4,7 @@ import Home from "pages/Home";
 import NotFound from "pages/NotFound";
 const About = React.lazy(() => import("pages/About"));
 const Customers = React.lazy(() => import("pages/Customers"));
-const Merchants = React.lazy(() => import("pages/Merchantshifi"));
+const Merchants = React.lazy(() => import("pages/Merchants"));
 const Contactus = React.lazy(() => import("pages/Contactus"));
 const FAQs = React.lazy(() => import("pages/FAQs"));
 const Landing = React.lazy(() => import("pages/Landing"));

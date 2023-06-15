@@ -22,7 +22,7 @@ const AboutPage = () => {
               <div className='flex flex-col    items-center justify-start sm:mt-0 mt-11  md:w-full'>
                 <div className='flex flex-col  items-center justify-start  sm:mt-0  md:w-full'>
                   <Text
-                    className='  max-w-[60%] sm:text-[32px] sm:mt-[0px] sm:max-w-[80%] md:mt-[200px]     md:text-[38px] text-[42px] text-blue_gray-900_02 tracking-[0.84px] '
+                    className='max-w-[60%] sm:text-[32px] sm:mt-[0px] sm:max-w-[100%] md:mt-[200px]     md:text-[38px] text-[42px] text-blue_gray-900_02 tracking-[0.84px] '
                     size='txtManropeMedium42'
                   >
                     <span className=' md:text-[#FFFFFF] sm:text-blue_gray-900_02 font-manrope font-bold'>
@@ -134,13 +134,13 @@ const AboutPage = () => {
             </Text>
 
             <List
-              className='sm:flex-col flex-row md:gap-10 gap-[72px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center max-w-[1190px] mt-[35px] mx-auto md:px-5 w-full'
+              className='sm:flex-col flex-row md:gap-10 gap-[70px] grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center max-w-[1190px] mt-[35px] mx-auto md:px-5 w-full'
               orientation='horizontal'
             >
               <div className='bg-gradient11  border border-black-900 border-solid flex flex-1 flex-col items-center justify-center p-1.5 rounded-[12px] w-full'>
                 <Img
                   className='h-[160px] md:h-auto mt-2 object-cover rounded-[30px] w-[44%] sm:w-[35%] md:w-[40%]'
-                  src='images/img_rectangle5.png'
+                  src='images/Kelvin.png'
                   alt='rectangleFive'
                 />
 
@@ -148,22 +148,21 @@ const AboutPage = () => {
                   className='mt-4 text-[22px] text-blue_gray-900_02 sm:text-lg md:text-xl'
                   size='txtManropeSemiBold22Bluegray90002'
                 >
-                  John Doe
+                  Kevin Mulama
                 </Text>
                 <Text
                   className='text-[22px] text-gray-700 sm:text-lg md:text-xl'
                   size='txtManropeSemiBold22Gray700'
                 >
-                  Co-Founder & CEO
+                  Founder & CEO
                 </Text>
                 <Text
                   className='mb-[17px] ml-2 mt-4 text-black-900 text-xl'
                   size='txtQuicksandRegular20'
                 >
                   <>
-                    With over 5 years of experience in finance and technology,
-                    John leads our team with a passion for making financial
-                    services accessible to all.
+                  Driven professional passionate about making finance accessible to all with over 5 years of experience in the field.
+
                   </>
                 </Text>
               </div>
@@ -171,7 +170,7 @@ const AboutPage = () => {
               <div className='bg-gradient11  border border-black-900 border-solid flex flex-1 flex-col items-center justify-center p-1.5 rounded-[12px] w-full'>
                 <Img
                   className='h-[160px] md:h-auto mt-2 object-cover rounded-[30px] w-[44%] sm:w-[35%] md:w-[40%]'
-                  src='images/img_rectangle7.png'
+                  src='images/purity.png'
                   alt='rectangleFive'
                 />
 
@@ -179,21 +178,20 @@ const AboutPage = () => {
                   className='mt-4 text-[22px] text-blue_gray-900_02 sm:text-lg md:text-xl'
                   size='txtManropeSemiBold22Bluegray90002'
                 >
-                  Jane
+                  Purity Christine
                 </Text>
                 <Text
                   className='text-[22px] text-gray-700 sm:text-lg md:text-xl'
                   size='txtManropeSemiBold22Gray700'
                 >
-                  Co-Founder & CTO
+                  Co-Founder & CCO
                 </Text>
                 <Text
                   className='mb-[17px] ml-2 mt-4 text-black-900 text-xl'
                   size='txtQuicksandRegular20'
                 >
                   <>
-                    Jane&#39;s technical expertise and commitment to innovation
-                    drive the development of our cutting-edge payment platform.
+                    Purity is a driven professional dedicated to driving business success through effective internal and external communications
                   </>
                 </Text>
               </div>
@@ -201,7 +199,8 @@ const AboutPage = () => {
               <div className='bg-gradient11  border border-black-900 border-solid flex flex-1 flex-col items-center justify-center p-1.5 rounded-[12px] w-full'>
                 <Img
                   className='h-[160px] md:h-auto mt-2 object-cover rounded-[30px] w-[44%] sm:w-[35%] md:w-[40%]'
-                  src='images/img_rectangle6_171x150.png'
+                  // src='images/img_rectangle6_171x150.png'
+                  src='images/dan.png'
                   alt='rectangleFive'
                 />
 
@@ -209,21 +208,20 @@ const AboutPage = () => {
                   className='mt-4 text-[22px] text-blue_gray-900_02 sm:text-lg md:text-xl'
                   size='txtManropeSemiBold22Bluegray90002'
                 >
-                  Alex
+                  Daniel Mulama
                 </Text>
                 <Text
                   className='text-[22px] text-gray-700 sm:text-lg md:text-xl'
                   size='txtManropeSemiBold22Gray700'
                 >
-                  Head of Operations
+                  Co-founder & CTO
                 </Text>
                 <Text
                   className='mb-[17px] ml-2 mt-4 text-black-900 text-xl'
                   size='txtQuicksandRegular20'
                 >
                   <>
-                    Alex oversees the day-to-day operations, ensuring smooth
-                    processes and exceptional customer experiences.
+                    Daniel is an Accomplished Actuarial Science professional with expertise in finance planning, data analysis, and risk management
                   </>
                 </Text>
               </div>
@@ -286,11 +284,8 @@ const AboutPage = () => {
                   >
                     <>
                       Innovation: We continuously innovate and improve our
-                      platform
-                      <br />
-                      to deliver the best user experience and stay ahead of
-                      evolving <br />
-                      needs
+                      platform to deliver the best user experience and stay
+                      ahead of evolving needs
                     </>
                   </Text>
                 </div>
